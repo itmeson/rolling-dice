@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="controls">
+        <input type="number" id="remove-value" placeholder="Enter the number to remove" min="1" max="6" value="10">
+        <button id="roll-button">Roll Dice</button>
+        <p>Roll the dice, remove all the 10's</p>
+        <p>Removed Dice Count: <span id="removed-count">0</span></p>
+    </div>
+    <div id="main-content">
+        <div id="dice-container"></div>
+        <canvas id="diceChart"></canvas>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

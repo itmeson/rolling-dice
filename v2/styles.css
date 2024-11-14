@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+#controls {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px; /* Ensure the content does not overflow */
+    flex-wrap: wrap; /* Allow wrapping to prevent overflow */
+}
+
+#dice-container {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+    flex: 1; /* Allow the dice container to take available space */
+}
+
+#remove-value {
+    visibility: hidden;
+}
+
+.die {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    font-size: 24px;
+    background-color: white;
+}
+
+.die.rolled {
+    background-color: yellow;
+}
+
+.die.to-remove {
+    background-color: red;
+}
+
+#roll-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#stats {
+    text-align: center;
+    font-size: 20px;
+}
+
+#diceChart {
+    width: 40%;
+    max-width: 400px; /* Ensure the chart does not overflow */
+    height: auto;
+    flex: 1; /* Allow the chart to take available space */
+}
