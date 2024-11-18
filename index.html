@@ -3,35 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dice Roller</title>
+    <title>Dice Explorations</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 </head>
 <body>
-    <div>
-        <label for="dice-count">Number of Dice (1-100):</label>
-        <input type="number" id="dice-count" name="dice-count" min="1" max="100" value="1">
-        <button id="update-dice-count">Update Dice Count</button>
-    </div>
-    
-    <div>
-        <label for="set-value">Set All Dice to Value (1-6):</label>
-        <input type="number" id="set-value" name="set-value" min="1" max="6" value="1">
-        <button id="set-dice-value">Set Dice Value</button>
-    </div>
+    A collection of explorations with dice.
+    <ul>
+        <li><a href="equilibrium/">Approach to Equilibrium</a></li>
+        <li><a href="radiation/">Radioactive Dice</a></li>
+    </ul>
 
-    <div id="stats">
-        <p>Sum of Dice: <span id="sum">1</span></p>
-        <p>Number of Rolls: <span id="rolls">0</span></p>
-    </div>
-    <button id="roll-button">Roll a Die</button>
-
-    <div id="main-content">
-        <div id="dice-container"></div>
-        <canvas id="diceChart" width="300" height="200"></canvas>
-    </div>
-    
-    <script src="script.js"></script>
 </body>
 </html>
