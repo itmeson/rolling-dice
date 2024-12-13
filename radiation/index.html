@@ -8,9 +8,11 @@
 </head>
 <body>
     <div id="controls">
-        <input type="number" id="remove-value" placeholder="Enter the number to remove" min="1" max="6" value="10">
+        <input type="number" id="remove-value" placeholder="Enter the number to remove" min="1" max="6" value="1">
+        <input type="number" id="dice-size" 
+        placeholder="Enter the max value on the dice.  Enter 2 for a coin, 6 for standard dice, etc." min="2" max="100" value="6">
         <button id="roll-button">Roll Dice</button>
-        <p>Roll the dice, remove all the 10's</p>
+        <p>Roll the dice, remove the 1s</p>
         <p>Removed Dice Count: <span id="removed-count">0</span></p>
     </div>
     <div id="main-content">

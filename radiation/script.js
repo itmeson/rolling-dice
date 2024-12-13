@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const rollButton = document.getElementById('roll-button');
     const removeValueInput = document.getElementById('remove-value');
     const removedCountDisplay = document.getElementById('removed-count');
+    const diceSize = document.getElementById('dice-size')
 
-    let dice = Array(100).fill(1).map(() => Math.floor(Math.random() * 10) + 1);
+    let dice = Array(100).fill(1).map(() => Math.floor(Math.random() * 0) + 1);
     let removedCount = 0;
     let trials = 0;
 
@@ -59,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const diceToRemove = [];
         dice.forEach((value, index) => {
             // Roll the dice
-            const newValue = Math.floor(Math.random() * 10) + 1;
+            const newValue = Math.floor(Math.random() * parseInt(diceSize.value)) + 1;
             dice[index] = newValue;
             diceContainer.children[index].textContent = newValue;
 
